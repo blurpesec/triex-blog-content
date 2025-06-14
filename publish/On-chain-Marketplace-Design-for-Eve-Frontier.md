@@ -65,13 +65,9 @@ The order-book model mirrors traditional financial exchanges, where buyers and s
 At its core, the architecture consists of:
 
 - **Order Creation:** Traders submit limit orders to a smart contract by calling a function on an `Orderbook` contract. Each order must include the location of the assets (smart object id), the item id, the price, order type (buy/sell limit/market), the quantity to buy/sell, and the character id of the order owner.
-
 - **Order Storage:** Orders are recorded in a structured on-chain data store (in Eve Frontier's current iteration - it would be a [MUD Table](https://mud.dev/introduction)). Orders should be sorted by price to keep gas fees minimized (more computation causes higher gas fees.
-
 - **Matching Engine:** Order matching can happen fully on-chain via a matching algorithm baked into the contract. Orders are stored pre-sorted to reduce computational complexity.
-
 - **Trade Settlement:** When a match occurs, the smart contract executes the trade atomically - transferring ownership of both assets between buyer and seller. Typically, the assets are held in escrow by the Smart Storage Unit until the transaction is complete.
-
 - **Cancellation & Expiry:** Users can cancel their orders manually, and smart contracts can be configured to support order expiry based on a order creation timestamp field to reduce gas bloat and stale entries.
 
 This model gives players full control over their trading intent - including setting precise prices and order parameters. However, the cost of storing and updating on-chain state, especially for a large order book, can become an issue if this exists on a more expensive blockchain. The blockchain that EveFrontier exists on shouldn't have this issue.
