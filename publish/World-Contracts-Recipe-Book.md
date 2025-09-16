@@ -87,7 +87,7 @@ ResourceId tableId = ResourceIdLib.encode({
 // Using the `RESOURCE_OFFCHAIN_TABLE` type makes it an offchain table
 ResourceId offchainTableId = ResourceIdLib.encode({
   typeId: RESOURCE_OFFCHAIN_TABLE, // "ot"
-  name: "Balance"
+  name: "Balance" // In actuality, this will end up being both the table namespace AND the table name. The first 14 bytes are the table namespace and the last 16 are the table name.
 });
 ```
 
@@ -119,5 +119,81 @@ function encodeResourceId(type, namespace, name) {
 const resourceId = encodeResourceId('tb', 'algo_net','AutoDelegation');
 console.log(`0x${resourceId}`)
 
-// Expected output: 0x7462616c676f5f6e65740000000000004175746f44656c65676174696f6e0000
+// Expected output: 
+// 0x7462616c676f5f6e65740000000000004175746f44656c65676174696f6e0000
+```
+
+## Reverse TableId to Table Name & Namespace
+To reverse a TableId to it's component table name / namespace use the following solidity functions:
+### Solidity
+
+```solidity
+
+ResourceId tableId = 0x6f74776f726c6400000000000000000046756e6374696f6e5369676e61747572;
+
+// From the bytes30 output - the first 14 bytes are the table's namespace and the next 16 are the table name (this is often represented in MUD's interfaces as `${tableNamespace}__${tableName}`).
+
+bytes30 tableResource = tableId.getResourceName(tableId);
+
+function splitResourceName(bytes30 input) external pure returns (bytes14 tableNamespace, bytes16 tableName) {
+	assembly {
+		tableNamespace := shr(0x60, input) // Keep the top 14 bytes
+		tableName := shl(0x70, input) // Shift top 14 out, keep bottom 16 bytes
+    }
+}
+
+bytes14 tableNamespace, bytes16 tableName = splitResourceName(tableResource);
+
+```
+
+### Javascript
+```javascript
+function decodeResourceId(tableIdHex) {
+  // strip optional 0x
+  const hex = tableIdHex.startsWith('0x') ? tableIdHex.slice(2) : tableIdHex;
+  if (hex.length !== 64) {
+    throw new Error("Expected 32‑byte hex (64 hex chars) after stripping '0x'");
+  }
+
+  // build a Uint8Array
+  const fullBytes = new Uint8Array(32);
+  for (let i = 0; i < 32; i++) {
+    fullBytes[i] = parseInt(hex.substr(i * 2, 2), 16);
+  }
+
+  // split out
+  const typeBytes = fullBytes.slice(0, 2);
+  const paddedName = fullBytes.slice(2);
+
+  const decoder = new TextDecoder();
+
+  // decode the 2‑byte type
+  const type = decoder.decode(typeBytes);
+
+  // namespace lives at offset 0 of paddedName, up to the first zero byte (or up to offset 14)
+  const namespaceZone = paddedName.slice(0, 14);
+  const nsEnd = namespaceZone.indexOf(0);
+  const namespace = decoder.decode(
+    nsEnd === -1 ? namespaceZone : namespaceZone.slice(0, nsEnd)
+  );
+
+  // name lives at offset 14 of paddedName, up to the first zero byte
+  const nameZone = paddedName.slice(14);
+  const nameEnd = nameZone.indexOf(0);
+  const name = decoder.decode(
+    nameEnd === -1 ? nameZone : nameZone.slice(0, nameEnd)
+  );
+
+  return { type, namespace, name };
+}
+
+// Example:
+
+// output from `const resourceId = encodeResourceId('tb', 'algo_net','AutoDelegation');`
+const resourceId = '0x7462616c676f5f6e65740000000000004175746f44656c65676174696f6e0000';
+const { type, namespace, name } = decodeResourceId(resourceId);
+console.log({ type, namespace, name })
+// Expected output: 
+// { type: 'tb', namespace: 'algo_net', name: 'AutoDelegation' }
+
 ```

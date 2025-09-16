@@ -1,5 +1,5 @@
 ---
-title: "Eve Frontier: Designing a Currency"
+title: Token Design for $eve
 excerpt: Outlining different structures for on-chain currencies
 tags:
   - ecosystem
