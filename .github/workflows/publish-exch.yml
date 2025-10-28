@@ -1,0 +1,44 @@
+name: Update Submodules in Another Repo
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  update-submodules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout the other repo
+        uses: actions/checkout@v4
+        with:
+          repository: loash-industries/metalyth-app-api  # Replace with actual org/repo
+          token: ${{ secrets.DEPLOY_KEY }}  # Needs write access to target repo
+          ref: main
+          submodules: recursive
+          persist-credentials: true  # Required for pushing later
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update submodules to latest remote commits
+        run: |
+          git submodule foreach '
+            git fetch origin
+            branch=$(git rev-parse --abbrev-ref HEAD)
+            git checkout origin/$branch
+            git reset --hard
+          '
+
+      - name: Commit and push if changes exist
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git add .
+            git commit -m "chore: update submodules from content repo"
+            git push origin main
+          else
+            echo "No submodule updates to commit."
+          fi
