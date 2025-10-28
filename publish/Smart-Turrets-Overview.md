@@ -64,17 +64,16 @@ This programmable system opens up incredible possibilities for sophisticated tar
 - Fire on everyone. All the time.
 - Fire on everyone except tribe members.
 - Fire on everyone except syndicate members (groups of tribes).
-- Maintain allow/deny lists for specific players.
+- Maintain allow/deny lists for specific players to create "safe passage" or "exclusion zone" rules.
 - Target specific tribes or coalitions.
-- Create "safe passage" rules for certain players.
 
 **Advanced Aggression Rules:**
 
 - Only engage players who have attacked others.
 - Protect tribe/syndicate members by targeting their attackers.
 - Join tribe members in their conflicts by targeting their victims.
-- Implement complex rules like "fire on anyone not in my alliance, except those whose names start with 'A'".
-- Create ship-type specific targeting (like "only target Tades-class ships").
+- Implement complex rules - "fire on anyone not in my alliance, except those whose names start with 'A'".
+- Create ship-type specific targeting - "only target non-tribe members flying Tades or battleship-class ships".
 
 ## On-Chain Data as Targeting Criteria
 

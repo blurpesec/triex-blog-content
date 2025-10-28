@@ -8,6 +8,7 @@ tags:
   - proposal
   - storage-abstraction
   - allocation-system
+  - alias__sui-migration
 date: June 20th, 2025
 author: Hecate
 updated_at: July 9th, 2025
@@ -42,7 +43,7 @@ BucketedInventoryItem: {
 
 Additionally - we will want some metadata about the bucket to help with display:
 ```soldity
-BucketMetadat: {
+BucketMetadata: {
   schema: {
 	smartObjectId: "uint256",
 	bucketId: "uint256",
@@ -164,7 +165,7 @@ func transferItemsFromEphemeralInventory(
 We'll be extending it to cover the `bucketId` use-case
 
 ```solidity
-func `deposit`(
+func deposit(
 	uint256 smartObjectId, 
 	uint256 quantityToTransfer, 
 	uint256 itemId,
@@ -304,7 +305,7 @@ func externalTransfer(
 This one will be created from scratch. It doesn't actually "transfer" any items - just changes which `bucketId` "owns" the `itemId` of `quantityToTransfer`.
 
 ```solidity
-func intenralTransfer(
+func internalTransfer(
 	uint256 smartObjectId,
 	uint256 sourceBucketId,
 	uint256 recipientBucketId,

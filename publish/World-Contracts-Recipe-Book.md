@@ -5,6 +5,7 @@ tags:
   - ecosystem
   - development
   - eve-frontier
+  - alias__sui-migration
 date: July 9th, 2025
 create: July 9th, 2025
 update: July 9th, 2025
