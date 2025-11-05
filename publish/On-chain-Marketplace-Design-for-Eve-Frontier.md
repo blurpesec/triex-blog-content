@@ -4,11 +4,11 @@ excerpt: Outlining the structure of on-chain marketplaces
 tags:
   - ecosystem
   - onchain-markets
-  - economics
   - decentralized-exchanges
   - eve-frontier
 date: June 9th, 2025
 author: Hecate
+image: /assets/hub-landing.avif
 ---
 # 1. Introduction
 

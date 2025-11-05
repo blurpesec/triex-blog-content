@@ -7,6 +7,7 @@ tags:
   - smart-turrets
 date: September 15th, 2025
 author: Hecate
+image: /assets/smart-turret.png
 ---
 
 

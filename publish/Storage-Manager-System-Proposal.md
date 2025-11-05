@@ -5,14 +5,13 @@ tags:
   - ecosystem
   - eve-frontier
   - development
-  - proposal
   - storage-abstraction
-  - allocation-system
   - alias__sui-migration
 date: June 20th, 2025
 author: Hecate
 updated_at: July 9th, 2025
 created_at: June 20th, 2025
+image: /assets/smart_storage_unit.png
 ---
 # Problem Statement
 
@@ -27,21 +26,24 @@ Create a proxy wrapper around the basic storage unit functions that handles tran
 
 In order to provide a wrapper around where assets are "allocated" to buckets - we effectively need a duplicate table that tracks primary inventory (akin to the existing `InventoryItem` table, but with unique `bucketId` by "deposit target"). This table structure can look like this:
 
-```solidity
-BucketedInventoryItem: {
-  schema: {
-	bucketId: "uint256",
-	itemObjectId: "uint256",
-	exists: "bool",
-	quantity: "uint256",
-	index: "uint256",
-	version: "uint256",
-  },
-  key: ["smartObjectId", "bucketId"],
-},
+```json
+{
+	BucketedInventoryItem: {
+	  schema: {
+		bucketId: "uint256",
+		itemObjectId: "uint256",
+		exists: "bool",
+		quantity: "uint256",
+		index: "uint256",
+		version: "uint256",
+	  },
+	  key: ["smartObjectId", "bucketId"],
+	}
+}
 ```
 
 Additionally - we will want some metadata about the bucket to help with display:
+<<<<<<< Updated upstream
 ```soldity
 BucketMetadata: {
   schema: {
@@ -51,6 +53,19 @@ BucketMetadata: {
   },
   key: ["smartObjectId", "bucketId"],
 },
+=======
+```json
+{
+	BucketMetadat: {
+	  schema: {
+		smartObjectId: "uint256",
+		bucketId: "uint256",
+		name: "string",
+	  },
+	  key: ["smartObjectId", "bucketId"],
+	}
+}
+>>>>>>> Stashed changes
 ```
 
 ### String Utils
