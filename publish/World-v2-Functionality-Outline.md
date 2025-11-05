@@ -3,7 +3,6 @@ title: World v2 Functionality Outline
 excerpt: An overview of how Eve Frontier World v2 works
 tags:
   - ecosystem
-  - eve-frontier
   - development
   - alias__sui-migration
 date: June 16th, 2025

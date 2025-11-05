@@ -5,7 +5,6 @@ tags:
   - ecosystem
   - onchain-markets
   - decentralized-exchanges
-  - eve-frontier
 date: June 9th, 2025
 author: Hecate
 image: /assets/hub-landing.avif

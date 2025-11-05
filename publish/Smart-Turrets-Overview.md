@@ -3,7 +3,6 @@ title: "Smart Turrets: Overview"
 excerpt: An explanation of how smart turrets function
 tags:
   - ecosystem
-  - eve-frontier
   - smart-turrets
 date: September 15th, 2025
 author: Hecate

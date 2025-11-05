@@ -3,7 +3,6 @@ title: Terminology
 excerpt: Reference-able terminology guide for Eve Frontier / Blockchain
 tags:
   - ecosystem
-  - eve-frontier
   - development
   - alias__sui-migration
 date: June 17th, 2025

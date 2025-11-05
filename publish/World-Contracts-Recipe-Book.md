@@ -4,7 +4,6 @@ excerpt: Where to find common data objects and logic in the World Chain Contract
 tags:
   - ecosystem
   - development
-  - eve-frontier
   - alias__sui-migration
 date: July 9th, 2025
 create: July 9th, 2025

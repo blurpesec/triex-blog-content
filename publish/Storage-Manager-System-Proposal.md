@@ -3,7 +3,6 @@ title: Storage Manager System
 excerpt: A proposal for handling multi-system storage units by subdividing primary inventory
 tags:
   - ecosystem
-  - eve-frontier
   - development
   - storage-abstraction
   - alias__sui-migration
