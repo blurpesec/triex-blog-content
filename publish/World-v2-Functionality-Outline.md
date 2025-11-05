@@ -9,7 +9,7 @@ date: June 16th, 2025
 author: Hecate
 updated_at: July 9th, 2025
 created_at: June 24th, 2025
-image: /assets/smart-gate.png
+image: /smart-gate.png
 ---
 ## Smart Object Metadata
 

@@ -8,7 +8,7 @@ tags:
 date: July 9th, 2025
 create: July 9th, 2025
 update: July 9th, 2025
-image: /assets/dust.avif
+image: /dust.avif
 ---
 # Data in tables
 ### Solidity

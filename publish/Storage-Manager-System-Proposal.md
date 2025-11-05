@@ -10,7 +10,7 @@ date: June 20th, 2025
 author: Hecate
 updated_at: July 9th, 2025
 created_at: June 20th, 2025
-image: /assets/smart_storage_unit.png
+image: /smart_storage_unit.png
 ---
 # Problem Statement
 

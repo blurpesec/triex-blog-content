@@ -7,7 +7,7 @@ tags:
   - decentralized-exchanges
 date: June 9th, 2025
 author: Hecate
-image: /assets/hub-landing.avif
+image: /hub-landing.avif
 ---
 # 1. Introduction
 
