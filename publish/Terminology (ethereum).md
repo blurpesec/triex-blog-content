@@ -7,7 +7,7 @@ tags:
   - alias__sui-migration
 date: June 17th, 2025
 author: Hecate
-image: /headen.png
+image: /headen.webp
 ---
 # Terminology
 
