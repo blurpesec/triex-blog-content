@@ -9,6 +9,7 @@ author: Hecate
 image: /currencies.svg
 ---
 <iframe src="https://link.excalidraw.com/readonly/5Yvp7wh8fkK30RZ5LApb?darkMode=true" width="600" height="400"></iframe>
+
 ## The Currency Design Compass for "Tribal" Economics
 
 This framework maps the fundamental trade-offs in virtual currency design across two critical dimensions that determine a currency's viability and use cases within game economies.
@@ -17,7 +18,7 @@ This framework maps the fundamental trade-offs in virtual currency design across
 
 **The Openness Axis (Horizontal):** Ranges from "Non-extensible" (closed) to "Extensible" (open), determining how freely the currency integrates with other systems. Non-extensible currencies maintain exclusivity within defined boundaries, while extensible currencies can bridge multiple tribes or regional economies.
 
-### The Four Strategic Quadrants:
+### The Four Strategic Quadrants
 
 **Quadrant 1 - Tribe Loyalty Points:** Centrally-managed and closed. Perfect for internal tribe rewards and mission systems where control matters more than external trust.
 
@@ -27,7 +28,7 @@ This framework maps the fundamental trade-offs in virtual currency design across
 
 **Quadrant 4 - Open Protocol Currencies:** Credibly neutral and open. The only archetype capable of becoming game-wide trading standards. By sacrificing control for trust-less-ness and extensibility, these can scale beyond any single tribe or syndicate's influence.
 
-### The Critical Insight:
+### The Critical Insight
 
 The framework maps theoretical trade-offs, but **utility ultimately determines currency viability**, not position on the chart. While credible neutrality (bottom half) reduces trust barriers for adoption, history shows that centrally-managed currencies can dominate through raw utility creation - whether via military might, economic leverage, exclusive access to resources, or superior infrastructure.
 
