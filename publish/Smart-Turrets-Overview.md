@@ -8,17 +8,15 @@ date: September 15th, 2025
 author: Hecate
 image: /smart-turret.png
 ---
-
-
 # Smart Turrets: Building Programmable Fire Control Systems
 
 Smart turrets represent one of the core programmable systems within Eve Frontier. These automated weapons platforms don't just mindlessly shoot at everything that moves - they can be programmed with sophisticated logic to make complex targeting decisions based on real-time data.
 
 ## How Smart Turrets Work by Default
 
-At their core, smart turrets operate on a simple principle: as long as the turret is `online` and has both a weapon and ammunition, it will automatically engage any target within range (approximately 60km) that doesn't belong to the same tribe as the turret's `owner`.
+At their core, smart turrets operate on a simple principle: as long as the turret is `online` and has both a weapon and ammunition, it will automatically engage any target within range (approximately `160km`) that doesn't belong to the same tribe as the turret's `owner`.
 
-But the real magic happens when you dig into the programmable behavior system.
+But the real magic happens when you dig into the programmable behavior.
 
 ## The Two Pillars of Fire Control
 

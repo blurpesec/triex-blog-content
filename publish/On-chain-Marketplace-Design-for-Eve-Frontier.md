@@ -5,7 +5,7 @@ tags:
   - ecosystem
   - onchain-markets
   - decentralized-exchanges
-date: June 9th, 2025
+date: November 8th, 2025
 author: Hecate
 image: /hub-landing.png
 ---

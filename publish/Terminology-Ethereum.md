@@ -1,5 +1,5 @@
 ---
-title: Terminology
+title: Terminology (Ethereum)
 excerpt: Reference-able terminology guide for Eve Frontier / Blockchain
 tags:
   - ecosystem

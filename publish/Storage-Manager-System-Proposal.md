@@ -6,6 +6,7 @@ tags:
   - development
   - storage-abstraction
   - alias__sui-migration
+  - alias__deprecated
 date: June 20th, 2025
 author: Hecate
 updated_at: July 9th, 2025

@@ -6,12 +6,10 @@ tags:
   - development
   - alias__sui-migration
 date: July 9th, 2025
-create: July 9th, 2025
-update: July 9th, 2025
 image: /dust.avif
 ---
 # Data in tables
-### Solidity
+## Solidity
 To read data from tables within Solidity - import the table from the relevant NPM package exporting the table (in non-custom cases, this will be auto-generated into a `@eveworld/world-v2/src/namespaces/evefrontier/codegen/tables/*` table).
 
 Examples:
@@ -77,8 +75,6 @@ A table's `typeId` defines how they function on-chain (off-chain tables writes/u
 import { ResourceId, ResourceIdLib } from "@latticexyz/store/src/ResourceId.sol";
 import { RESOURCE_TABLE, RESOURCE_OFFCHAIN_TABLE } from "@latticexyz/store/src/storeResourceTypes.sol";
 
-...
-
 // Using the `RESOURCE_TABLE` type makes it an onchain table
 ResourceId tableId = ResourceIdLib.encode({
   typeId: RESOURCE_TABLE, // "tb"
@@ -129,7 +125,6 @@ To reverse a TableId to it's component table name / namespace use the following 
 ### Solidity
 
 ```solidity
-
 ResourceId tableId = 0x6f74776f726c6400000000000000000046756e6374696f6e5369676e61747572;
 
 // From the bytes30 output - the first 14 bytes are the table's namespace and the next 16 are the table name (this is often represented in MUD's interfaces as `${tableNamespace}__${tableName}`).
@@ -144,7 +139,6 @@ function splitResourceName(bytes30 input) external pure returns (bytes14 tableNa
 }
 
 bytes14 tableNamespace, bytes16 tableName = splitResourceName(tableResource);
-
 ```
 
 ### Javascript
@@ -196,5 +190,4 @@ const { type, namespace, name } = decodeResourceId(resourceId);
 console.log({ type, namespace, name })
 // Expected output: 
 // { type: 'tb', namespace: 'algo_net', name: 'AutoDelegation' }
-
 ```
