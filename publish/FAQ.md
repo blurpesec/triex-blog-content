@@ -3,8 +3,9 @@ title: FAQ
 excerpt: Frequently Asked Questions
 tags:
   - faq
-date: November 8th, 2025
+date: November 9th, 2025
 author: Hecate
+image: /foam_block.svg
 ---
 ## What is it?
 Trinary Exchange (TriEx) is a distributed exchange protocol that allows for tribes, syndicates, or players within Eve Frontier to spin up their own trading hubs by exposing a low-level trading system on-chain that is trust-less by design. The Trinary Exchange service and the operators of trade hubs will have no ability to take player items or currency; they will only have the ability to facilitate trades initiated by players. 
