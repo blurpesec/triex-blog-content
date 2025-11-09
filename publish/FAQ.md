@@ -1,6 +1,6 @@
 ---
 title: FAQ
-excerpt: Frequently Asked Questions
+excerpt: Frequently Asked Questions about Trinary Exchange - an item marketplace protocol for EVE Frontier
 tags:
   - faq
 date: November 9th, 2025
@@ -9,6 +9,9 @@ image: /foam_block.svg
 ---
 ## What is it?
 Trinary Exchange (TriEx) is a distributed exchange protocol that allows for tribes, syndicates, or players within Eve Frontier to spin up their own trading hubs by exposing a low-level trading system on-chain that is trust-less by design. The Trinary Exchange service and the operators of trade hubs will have no ability to take player items or currency; they will only have the ability to facilitate trades initiated by players. 
+
+### Is the Trinary Exchange an in-game tribe?
+No. TriEx aims to be a neutral service that builds trading infrastructure for other tribes to use. There will be no gating to deny anyone the ability to become a trading hub service operator, nor on building second-order services on top of it (tribe mission systems, loan systems, etc).
 
 ## Is it safe?
 Generally, yes - though this is a bit of a complex question to answer, so we'll break it down into different types of risk (these aren't all-encompassing, but should give a good indication of how we're thinking about this).
@@ -34,3 +37,4 @@ Yes.
 
 ## **When can I start using Trinary Exchange?**
 We're aiming to have a beta using mocked on-chain data sometime in Feb/March 2026. As for main game data - it will likely be some time after CCP has finished migrating the underlying state to SUI (currently targeting March, 2026).
+
