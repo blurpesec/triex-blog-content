@@ -8,9 +8,9 @@ date: November 9th, 2025
 author: Hecate
 image: /currencies.svg
 ---
-<iframe src="https://link.excalidraw.com/readonly/5Yvp7wh8fkK30RZ5LApb?darkMode=true" width="600" height="400"></iframe>
-
 ## The Currency Design Compass for "Tribal" Economics
+
+![](Pasted%20image%2020251109134644.png)
 
 This framework maps the fundamental trade-offs in virtual currency design across two critical dimensions that determine a currency's viability and use cases within game economies.
 
