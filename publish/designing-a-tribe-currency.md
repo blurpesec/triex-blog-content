@@ -6,6 +6,7 @@ tags:
   - currency
 date: November 9th, 2025
 author: Hecate
+image: /currencies.svg
 ---
 <iframe src="https://link.excalidraw.com/readonly/5Yvp7wh8fkK30RZ5LApb?darkMode=true" width="600" height="400"></iframe>
 ## The Currency Design Compass for "Tribal" Economics
@@ -28,7 +29,11 @@ This framework maps the fundamental trade-offs in virtual currency design across
 
 ### The Critical Insight:
 
-The framework reveals that **credible neutrality is the prerequisite for currencies to function as actual money** - whether as trading instruments or reserve assets. The bottom half enables commerce; the top half enables control. Tribes face a fundamental choice: maintain flexibility for internal mechanics (top), or sacrifice control to create trusted currencies that others will actually use for trade and value storage (bottom).
+The framework maps theoretical trade-offs, but **utility ultimately determines currency viability**, not position on the chart. While credible neutrality (bottom half) reduces trust barriers for adoption, history shows that centrally-managed currencies can dominate through raw utility creation - whether via military might, economic leverage, exclusive access to resources, or superior infrastructure.
 
-A tribe seeking to create widely-adopted economic standards must build in the credibly neutral space, accepting that the rules binding others will equally bind them. This is why commodity-based currencies and open protocols will grow to dominate inter-tribe trade, while loyalty points remain confined to their issuing organizations.
+The chart's "viability zones" aren't fixed laws but starting positions that assume neutral power dynamics. In reality, a dominant tribe/syndicate can force adoption of their centrally-managed currency by making it indispensable: controlling critical trade routes, gating essential content, or simply being the economic hegemon that others must deal with. Conversely, even the most credibly neutral currency fails without genuine utility.
+
+This makes the framework **contextual and dynamic**. A powerful tribe or syndicate might deliberately choose to build from the place of Quadrant 1 (centralized and closed) to maintain maximum control while using their dominance to compel adoption. A coalition of smaller tribes might need Quadrant 4's credible neutrality to overcome trust barriers they can't break through force. The annotations about "viable as game-wide trading currencies" describe the path of least resistance, not the only path.
+
+The strategic question isn't "which quadrant enables trade?" but rather "given our tribe's power to create and enforce utility, which position maximizes our objectives?" Currency dominance comes from making others need your currency, whether through trust-less protocols or through making trust irrelevant via sheer necessity.
 
