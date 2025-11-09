@@ -1,6 +1,6 @@
 ---
 title: FAQ
-excerpt:
+excerpt: Frequently Asked Questions
 tags:
   - faq
 date: November 8th, 2025
@@ -32,4 +32,4 @@ In addition - we'll be looking into the viability of periodically publishing a s
 Yes.
 
 ## **When can I start using Trinary Exchange?**
-There will likely be a beta using mocked on-chain data sometime in Feb/March 2026. As for main game data - it will likely be some time after CCP has finished migrating the underlying state to SUI (currently targeting March, 2026).
+We're aiming to have a beta using mocked on-chain data sometime in Feb/March 2026. As for main game data - it will likely be some time after CCP has finished migrating the underlying state to SUI (currently targeting March, 2026).
