@@ -10,8 +10,7 @@ image: /currencies.svg
 ---
 ## The Currency Design Compass for "Tribal" Economics
 
-![](Pasted%20image%2020251109134644.png)
-
+![tribal currency design matrix](/tribal-currency-design-matrix.png)
 This framework maps the fundamental trade-offs in virtual currency design across two critical dimensions that determine a currency's viability and use cases within game economies.
 
 **The Control Axis (Vertical):** Spans from "Centrally-managed" to "Credibly Neutral." Centrally-managed currencies allow tribes to adjust supply and rules at will, providing flexibility for internal mechanics. Credibly neutral currencies operate on immutable, predetermined rules that build trust through predictability - essential for any currency meant to serve as a trading instrument or reserve asset.
