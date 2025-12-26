@@ -22,7 +22,7 @@ This document covers:
 
 ---
 
-## Prerequisites
+# Prerequisites
 
 ### Install the Sui SDK
 
@@ -58,8 +58,8 @@ const wsClient = new SuiClient({
 ```
 
 ---
-
-## Get Objects Owned by an Address
+## HTTP API
+### Get Objects Owned by an Address
 
 Purpose: Retrieve all objects (coins, NFTs, custom Move objects) owned by a wallet.
 
@@ -71,7 +71,7 @@ const objects = await client.getOwnedObjects({
 });
 ```
 
-### With Object Details
+#### With Object Details
 
 ```ts
 const objects = await client.getOwnedObjects({
@@ -91,11 +91,11 @@ Notes:
 
 ---
 
-## Get Coins Owned by an Address
+### Get Coins Owned by an Address
 
 Purpose: Retrieve coin objects owned by a wallet.
 
-### All Coins (All Types)
+#### All Coins (All Types)
 
 ```ts
 const coins = await client.getAllCoins({
@@ -103,7 +103,7 @@ const coins = await client.getAllCoins({
 });
 ```
 
-### Coins of a Specific Type
+#### Coins of a Specific Type
 
 ```ts
 const coins = await client.getCoins({
@@ -121,9 +121,9 @@ Each coin object includes:
 
 ---
 
-## Get Coin Balance (Quantity)
+### Get Coin Balance (Quantity)
 
-### Recommended: Aggregated Balance API
+#### Recommended: Aggregated Balance API
 
 ```ts
 const balance = await client.getBalance({
@@ -134,7 +134,7 @@ const balance = await client.getBalance({
 console.log(balance.totalBalance);
 ```
 
-### Manual Aggregation (Advanced)
+#### Manual Aggregation (Advanced)
 
 ```ts
 const coins = await client.getCoins({
@@ -150,7 +150,7 @@ const total = coins.data.reduce(
 
 ---
 
-## Get Total Supply of a Coin
+### Get Total Supply of a Coin
 
 Purpose: Retrieve global supply information.
 
@@ -164,7 +164,7 @@ console.log(supply.value);
 
 ---
 
-## Get Coin Metadata
+### Get Coin Metadata
 
 Purpose: Display-friendly information.
 
@@ -180,9 +180,9 @@ console.log(metadata.decimals);
 
 ---
 
-## Reading Objects
+### Reading Objects
 
-### Get Specific Object Details
+#### Get Specific Object Details
 
 ```ts
 const object = await client.getObject({
@@ -195,7 +195,7 @@ const object = await client.getObject({
 });
 ```
 
-### Type-Safe Content Parsing
+#### Type-Safe Content Parsing
 
 ```ts
 const content = object.data?.content;
@@ -207,11 +207,11 @@ if (content?.dataType === "moveObject") {
 
 ---
 
-## Dynamic Fields & Tables
+### Dynamic Fields & Tables
 
 Purpose: Read nested data structures like maps and collections.
 
-### Get All Dynamic Fields of an Object
+#### Get All Dynamic Fields of an Object
 
 ```ts
 const fields = await client.getDynamicFields({
@@ -224,7 +224,7 @@ fields.data.forEach(field => {
 });
 ```
 
-### Get Specific Dynamic Field Value
+#### Get Specific Dynamic Field Value
 
 ```ts
 const field = await client.getDynamicFieldObject({
@@ -238,7 +238,7 @@ const field = await client.getDynamicFieldObject({
 console.log(field.data?.content);
 ```
 
-### Common Pattern: Reading Table Entries
+#### Common Pattern: Reading Table Entries
 
 ```ts
 // For tables, dynamic fields store the actual data
@@ -253,7 +253,7 @@ const tableField = await client.getDynamicFieldObject({
 
 ---
 
-## Pagination Patterns
+### Pagination Patterns
 
 Purpose: Handle large result sets efficiently.
 
@@ -279,11 +279,11 @@ do {
 
 ---
 
-## Transaction Building & Execution
+### Transaction Building & Execution
 
 Purpose: Call Move functions and modify on-chain state.
 
-### Basic Transaction Structure
+#### Basic Transaction Structure
 
 ```ts
 const tx = new Transaction();
@@ -298,9 +298,9 @@ tx.moveCall({
 });
 ```
 
-### Common Transaction Patterns
+#### Common Transaction Patterns
 
-#### Splitting Coins
+##### Splitting Coins
 
 ```ts
 const tx = new Transaction();
@@ -315,7 +315,7 @@ const [splitCoin] = tx.splitCoins(
 );
 ```
 
-#### Transferring Objects
+##### Transferring Objects
 
 ```ts
 const tx = new Transaction();
@@ -326,7 +326,7 @@ tx.transferObjects(
 );
 ```
 
-#### Chaining Move Calls
+##### Chaining Move Calls
 
 ```ts
 const tx = new Transaction();
@@ -344,7 +344,7 @@ tx.moveCall({
 });
 ```
 
-#### Merging Coins
+##### Merging Coins
 
 ```ts
 const tx = new Transaction();
@@ -357,11 +357,11 @@ tx.mergeCoins(
 
 ---
 
-## Wallet Integration
+### Wallet Integration
 
 Purpose: Connect to user wallets and sign transactions.
 
-### Using Sui Wallet Standard
+#### Using Sui Wallet Standard
 
 ```ts
 import { getWallets } from "@mysten/dapp-kit";
@@ -378,7 +378,7 @@ const accounts = await wallet.getAccounts();
 const currentAccount = accounts[0];
 ```
 
-### Sign and Execute Transaction
+#### Sign and Execute Transaction
 
 ```ts
 const result = await wallet.signAndExecuteTransaction({
@@ -393,7 +393,7 @@ const result = await wallet.signAndExecuteTransaction({
 console.log("Transaction digest:", result.digest);
 ```
 
-### Sign Transaction Only (Advanced)
+#### Sign Transaction Only (Advanced)
 
 ```ts
 const signedTx = await wallet.signTransaction({
@@ -409,9 +409,9 @@ const result = await client.executeTransactionBlock({
 
 ---
 
-## Transaction Results & Parsing
+### Transaction Results & Parsing
 
-### Check Transaction Status
+#### Check Transaction Status
 
 ```ts
 if (result.effects?.status?.status === "success") {
@@ -421,7 +421,7 @@ if (result.effects?.status?.status === "success") {
 }
 ```
 
-### Parse Object Changes
+#### Parse Object Changes
 
 ```ts
 result.objectChanges?.forEach(change => {
@@ -442,7 +442,7 @@ result.objectChanges?.forEach(change => {
 });
 ```
 
-### Parse Events
+#### Parse Events
 
 ```ts
 result.events?.forEach(event => {
@@ -451,7 +451,7 @@ result.events?.forEach(event => {
 });
 ```
 
-### Get Gas Used
+#### Get Gas Used
 
 ```ts
 const gasUsed = result.effects?.gasUsed;
@@ -462,9 +462,9 @@ console.log("Storage rebate:", gasUsed?.storageRebate);
 
 ---
 
-## Error Handling
+### Error Handling
 
-### Transaction Execution Errors
+#### Transaction Execution Errors
 
 ```ts
 try {
@@ -493,7 +493,7 @@ try {
 }
 ```
 
-### API Query Errors
+#### API Query Errors
 
 ```ts
 try {
