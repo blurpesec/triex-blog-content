@@ -16,7 +16,7 @@ Before understanding what blockchain is, it helps to understand the problem it's
 
 This is Part 1 of a two-part series exploring blockchain technology and it's application for Eve Frontier - what it is, why it exists, and what it enables. This first post covers the historical context: how money became centralized, what problems that creates, and how Bitcoin offers an alternative. Part 2 explores smart contract blockchains, their application to gaming and what it unlocks for players in Eve Frontier. 
 
-_If you want to skip to part 2: [**"What happens when players build the economy**](https://trinary.exchange/posts/what-happens-when-players-build-the-economy)_
+_If you want to skip to part 2: [**"What happens when players build the economy"**](https://trinary.exchange/posts/what-happens-when-players-build-the-economy)_
 
 ## Historical Backdrop
 
@@ -52,4 +52,4 @@ Importantly, blockchain-based systems don't need to replace traditional institut
 
 Smart contract blockchains extend Bitcoin's decentralization to any program, not just currency. The result is infrastructure where anyone can build services on top of services, without asking permission - and where those services can work together in ways their original creators never planned. What happens when you apply this principle to a game world's economy?
 
-_For a detailed look at smart contract blockchains, how permission-less composability works, and what that means for Eve Frontier as a game - see Part 2: [**"What happens when players build the economy**](https://trinary.exchange/posts/what-happens-when-players-build-the-economy)_
+_For a detailed look at smart contract blockchains, how permission-less composability works, and what that means for Eve Frontier as a game - see Part 2: [**"What happens when players build the economy"**](https://trinary.exchange/posts/what-happens-when-players-build-the-economy)_
