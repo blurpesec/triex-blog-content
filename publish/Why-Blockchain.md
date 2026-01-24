@@ -1,5 +1,5 @@
 ---
-title: Why Blockchain? Understanding Decentralization and Bitcoin
+title: Why Blockchain?
 excerpt: What is a blockchain and what purpose does it serve?
 tags:
   - economics
@@ -10,6 +10,7 @@ date: January 24th, 2026
 author: Hecate
 updated_at: January 24th, 2026
 created_at: January 24th, 2026
+image: /currencies.svg
 ---
 Before understanding what blockchain is, it helps to understand the problem it's trying to solve. This post traces how money became centralized, why that creates risks, and how Bitcoin offers a different approach.
 

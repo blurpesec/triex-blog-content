@@ -7,6 +7,7 @@ date: January 24th, 2026
 author: Hecate
 updated_at: January 24th, 2026
 created_at: January 24th, 2026
+image: /hub-landing.png
 ---
 _For a detailed look into the context of what blockchains are - see the Part 1 post [**"Why Blockchain? Understanding Decentralization and Bitcoin"**](https://trinary.exchange/posts/why-blockchain)_
 
