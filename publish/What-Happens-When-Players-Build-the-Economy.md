@@ -25,7 +25,7 @@ This creates an ecosystem of open innovation. Take blockchain-based finance as a
 
 For gaming, this raises an interesting possibility: what if a game world operated on this same open infrastructure?
 
-## Why Would CCP Games Use One for Eve Frontier?
+## Why Would CCP Games Use Blockchain for Eve Frontier?
 
 Eve Online has always been known for its player-driven economy and emergent gameplay. Players don't just follow scripted "quests" - they build corporations, wage wars, manipulate markets, and create their own stories within a complex virtual world. But for all its depth, Eve Online still runs on CCP's servers with CCP's code. If you want to build a tool that interacts with the game economy, you need CCP's developer tooling. If you want to create new financial instruments or services, you're limited to what CCP allows. The game world, for all its player agency, ultimately operates within boundaries CCP controls.
 
