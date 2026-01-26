@@ -11,7 +11,7 @@ image: /hub-landing.png
 ---
 _For a detailed look into the context of what blockchains are - see the Part 1 post [**"Why Blockchain? Understanding Decentralization and Bitcoin"**](https://trinary.exchange/posts/why-blockchain)_
 
-Part 1 explained why decentralization matters: blockchains let people who don't trust each other—or any central authority—coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permission-less composability, and what happens when you apply these principles to a game world.
+Part 1 explained why decentralization matters: blockchains let people who don't trust each other, or any central authority, coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permission-less composability, and what happens when you apply these principles to a game world.
 
 ## What are Smart Contract Blockchains?
 
