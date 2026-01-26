@@ -9,7 +9,7 @@ updated_at: January 24th, 2026
 created_at: January 24th, 2026
 image: /hub-landing.png
 ---
-_For a detailed look into the context of what blockchains are - see the Part 1 post [**"Why Blockchain? Understanding Decentralization and Bitcoin"**](https://trinary.exchange/posts/why-blockchain)_
+_For a detailed look into the context of what blockchains are used for - see the Part 1 post [**"Why Blockchain?"**](https://trinary.exchange/posts/why-blockchain)_
 
 Part 1 explained why decentralization matters: blockchains let people who don't trust each other, or any central authority, coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permission-less modularity, and what happens when you apply these principles to a game world.
 
@@ -37,7 +37,7 @@ Eve Frontier changes this by building core game systems - assets, location, iden
 
 ### What This Actually Enables
 
-Consider ship lending. In Eve Online, lending a valuable ship requires personal trust - will they return it? The developer could build a lending system or a mission system (as they released in 2025), but you'd be constrained by whatever features they do or don't choose to include. Practically - this has lead to many systems in 
+Consider ship lending. In Eve Online, lending a valuable ship requires personal trust - will they return it? The developer could build a lending system or a mission system (as they released in 2025), but you'd be constrained by whatever features they do or don't choose to include.
 
 In Eve Frontier, someone writes a lending contract: you deposit collateral, borrow the ship, and the code handles everything automatically. Return it on time, get your deposit back. Don't return it, lender gets compensated. No personal trust required.
 
