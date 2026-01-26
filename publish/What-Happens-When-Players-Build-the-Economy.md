@@ -11,29 +11,33 @@ image: /hub-landing.png
 ---
 _For a detailed look into the context of what blockchains are - see the Part 1 post [**"Why Blockchain? Understanding Decentralization and Bitcoin"**](https://trinary.exchange/posts/why-blockchain)_
 
-Part 1 explained why decentralization matters: blockchains let people who don't trust each other, or any central authority, coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permission-less composability, and what happens when you apply these principles to a game world.
+Part 1 explained why decentralization matters: blockchains let people who don't trust each other, or any central authority, coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permission-less modularity, and what happens when you apply these principles to a game world.
 
 ## What are Smart Contract Blockchains?
 
-Smart contract blockchains extend Bitcoin's core innovation, decentralized and trust-less execution, to general-purpose programs. While Bitcoin's blockchain is purpose-built for transferring value, smart contract blockchains can run any logic that can be written in code: lending agreements, marketplaces, insurance policies, games. These programs (called "smart contracts") execute automatically in a decentralized network where no single party has control.
+Smart contract blockchains extend Bitcoin's core innovation, decentralized state and execution, to general-purpose programs. While Bitcoin's blockchain is purpose-built for transferring value, smart contract blockchains can run any logic that can be written in code: lending agreements, marketplaces, insurance policies, organizational structures and access controls. These programs (called "smart contracts") execute automatically in a decentralized network and can be programmed to have no owner or administrators
 
-### Permission-less Composability
+### Building Without Permission
 
-But the real power isn't _only_ about preventing institutional capture - it's about permission-less extensibility. Anyone can write code that interacts with existing smart contracts without asking permission. If someone creates a marketplace, you can write a bot that monitors prices and alerts you to deals. If someone creates a reputation system, you can write a background check tool that queries it before accepting contracts. These components stack together like LEGO blocks - each piece independently operated, but designed to fit together because they all run on the same shared infrastructure.
+The real power of this technology isn't just running programs in a decentralized way - it's that these programs become building blocks anyone can use. Think of smart contracts like public infrastructure that anyone can connect to and build upon.
+
+Here's how it works: when someone creates a smart contract - say, an online marketplace - anyone else can write code that plugs into it without needing approval. You could build a price-tracking tool that watches that marketplace and texts you when something goes on sale.
+
+Or if someone builds a system that tracks a player or tribe's reputation over time based on inputs from other players, you could create a background check service that looks people up in that system to see if their actions align with the goals of your organization.
 
 ### Smart Contracts vs Traditional Platforms
 
-Consider how this differs from traditional games. In World of Warcraft or Eve Online, if you want to build tools that interact with the game, you're limited to whatever developer tools the developer provides - and they can shut it down at any time. With smart contracts, there's no gatekeeper. The marketplace IS the developer tools. Anyone can read its data, write programs against it, or layer new services on top.
+Consider how this differs from traditional games. In World of Warcraft or Eve Online, if you want to build tools that interact with the game, you're limited to whatever developer tools the developer provides - and they can shut it down at any time. With smart contracts, there's no gatekeeper. The marketplace IS the developer's tool. Anyone can read its data, write programs against it, or layer new services on top.
 
 ## Why Would CCP Games Use Blockchain for Eve Frontier?
 
 Eve Online has always been known for its player-driven economy and emergent gameplay. Players build corporations, wage wars, manipulate markets, and create their own stories within a complex virtual world. But it all runs on CCP's servers with CCP's code. Want to create new financial instruments for your corp? You're limited to what CCP built. Want tools that analyze market trends? You need their developer tools, which they control.
 
-Eve Frontier changes this by building core game systems - assets, markets, identity - as smart contracts. The infrastructure becomes something anyone can interact with and extend.
+Eve Frontier changes this by building core game systems - assets, location, identity, and organizations - as smart contracts. The infrastructure becomes something anyone can interact with and extend.
 
 ### What This Actually Enables
 
-Consider ship lending. In Eve Online, lending a valuable ship requires personal trust - will they return it? The developer could build a lending system, but you'd be stuck with whatever features they include.
+Consider ship lending. In Eve Online, lending a valuable ship requires personal trust - will they return it? The developer could build a lending system or a mission system (as they released in 2025), but you'd be constrained by whatever features they do or don't choose to include. Practically - this has lead to many systems in 
 
 In Eve Frontier, someone writes a lending contract: you deposit collateral, borrow the ship, and the code handles everything automatically. Return it on time, get your deposit back. Don't return it, lender gets compensated. No personal trust required.
 
