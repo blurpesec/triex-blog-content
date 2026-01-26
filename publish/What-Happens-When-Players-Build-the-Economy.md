@@ -11,15 +11,16 @@ image: /hub-landing.png
 ---
 _For a detailed look into the context of what blockchains are - see the Part 1 post [**"Why Blockchain? Understanding Decentralization and Bitcoin"**](https://trinary.exchange/posts/why-blockchain)_
 
-Part 1 explained why decentralization matters. This post explores what it enables: smart contract blockchains, permissionless composability, and what happens when you apply these principles to a game world. This requires a bit of technical foundation—but the payoff is in what this enables for players.
+Part 1 explained why decentralization matters: blockchains let people who don't trust each other—or any central authority—coordinate using shared rules enforced by transparent code. This post explores what that enables: smart contract blockchains, permissionless composability, and what happens when you apply these principles to a game world.
 
 ## What are Smart Contract Blockchains?
 
-Smart contract blockchains extend Bitcoin's core innovation - decentralized, trust-less execution (meaning you don't need to trust any particular party because the system enforces the rules automatically) - to general-purpose programs. While Bitcoin's blockchain is purpose-built for transferring value, smart contract blockchains can run any logic that can be written in code: lending agreements, marketplaces, insurance policies, games. These programs (called "smart contracts") execute automatically in a decentralized network where no single party has control.
+
+Smart contract blockchains extend Bitcoin's core innovation, decentralized and trust-less execution, to general-purpose programs. While Bitcoin's blockchain is purpose-built for transferring value, smart contract blockchains can run any logic that can be written in code: lending agreements, marketplaces, insurance policies, games. These programs (called "smart contracts") execute automatically in a decentralized network where no single party has control.
 
 ### Permission-less Composability
 
-But the real power isn't _only_ about preventing institutional capture - it's about permission-less extensibility. Anyone can build on top of a smart contract blockchain without asking permission. If someone creates a lending protocol, you can build an insurance product on top of it. If someone builds a marketplace, you can create analytics tools that read from it, or automated trading bots that interact with it. These components compose together like building blocks, and because everything operates on shared, open infrastructure, they can interoperate in ways their original creators never imagined.
+But the real power isn't _only_ about preventing institutional capture - it's about permission-less extensibility. Anyone can build on top of a smart contract blockchain without asking permission. If someone creates a lending protocol, you can build an insurance product on top of it. If someone builds an item marketplace, you can create analytics tools that read from it, or automated trading bots that interact with it. These components compose together like building blocks, and because everything operates on shared, open infrastructure, they can interoperate in ways their original creators never imagined.
 
 This creates an ecosystem of open innovation. Take blockchain-based finance as an example: one team builds a lending protocol, another builds an exchange, a third combines them to create automated market-making strategies, a fourth builds insurance for those strategies, and a fifth creates user interfaces that tie it all together. Each piece is independently operated but fully composable with the others. No single company controls the whole stack, yet the pieces work together seamlessly because they're all operating on the same transparent, programmable infrastructure.
 
