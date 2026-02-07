@@ -3,7 +3,7 @@ title: FAQ
 excerpt: Frequently Asked Questions about Trinary Exchange - an item marketplace protocol for EVE Frontier
 tags:
   - faq
-date: February 7th, 2026
+date: February 6th, 2026
 author: Hecate
 image: /foam_block.svg
 ---

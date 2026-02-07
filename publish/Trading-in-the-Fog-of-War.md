@@ -6,7 +6,7 @@ tags:
   - economics
   - politics
   - speculation
-date: February 6th, 2026
+date: February 7th, 2026
 author: Hecate
 image: /a_hub.png
 ---
