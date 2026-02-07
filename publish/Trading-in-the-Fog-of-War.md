@@ -16,7 +16,7 @@ _Want to discuss trade hub strategies and share intel? Join the conversation in 
 
 ---
 
-The initial implementation of SUI world coming in Cycle 5 (March, 2026) will have all structure locations obfuscated by default. Building on top of this means that configured trade hubs start with obfuscated locations rather than being universally visible. The result is two distinct categories of trade hub, each with different properties, risks, and use cases.
+The initial implementation of the SUI world coming in Cycle 5 (March, 2026) will have all structure locations obfuscated by default. Building on top of this means that configured trade hubs start with obfuscated locations rather than being universally visible. The result is two distinct categories of trade hub, each with different properties, risks, and use cases.
 
 This post walks through what those categories look like and some of the strategic considerations that follow from them.
 
@@ -52,20 +52,16 @@ This means that tribes managing private hubs are also managing information acces
 
 The decision to make a hub public is also telling. A tribe that opens a public market on its border is signaling something about its posture, whether that signal is accurate or not. And because the transition is irreversible, the timing of that decision carries weight. Going public too early exposes infrastructure. Waiting too long can mean missing a window where outside traders would have been valuable.
 
----
-
 ## Open Questions
 
 Some things that will be resolved by gameplay rather than design documents:
 
-At what group size does a private hub's location become effectively impossible to keep secret? How do tribes manage this in practice?
+_At what group size does a private hub's location become effectively impossible to keep secret? How do tribes manage this in practice?_
 
-Do neutral public hubs emerge and sustain themselves, or does the incentive to raid consistently outweigh the incentive to trade?
+_Do neutral public hubs emerge and sustain themselves, or does the incentive to raid consistently outweigh the incentive to trade?_
 
-Can a tribe sustain a war economy entirely on private hubs, or does the need for outside traders eventually force them into the open?
+_Can a tribe sustain a war economy entirely on private hubs, or does the need for outside traders eventually force them into the open?_
 
 These are the kinds of questions where the answers will come from how players actually use these systems once they're live.
-
----
 
 _Have thoughts on these questions or strategies to share? Join the discussion on our [Discord](https://discord.com/channels/1436786656228282471/1469840140611490004) and help shape the meta._
