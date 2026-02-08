@@ -12,7 +12,7 @@ image: /a_hub.png
 ---
 # Public and Private Markets in EVE Frontier
 
-_Want to discuss trade hub strategies and share intel? Join the conversation in our [Discord community](https://discord.com/channels/1436786656228282471/1469840140611490004)._
+_Want to discuss trade hub strategies and share intel? Join the conversation in our [Discord community](https://discord.gg/VCmR6xrxmj)._
 
 ---
 
@@ -64,4 +64,4 @@ _Can a tribe sustain a war economy entirely on private hubs, or does the need fo
 
 These are the kinds of questions where the answers will come from how players actually use these systems once they're live.
 
-_Have thoughts on these questions or strategies to share? Join the discussion on our [Discord](https://discord.com/channels/1436786656228282471/1469840140611490004) and help shape the meta._
+_Have thoughts on these questions or strategies to share? Join the discussion on our [Discord community](https://discord.gg/VCmR6xrxmj) and help shape the meta._
