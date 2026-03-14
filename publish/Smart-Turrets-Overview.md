@@ -4,6 +4,7 @@ excerpt: An explanation of how smart turrets function
 tags:
   - ecosystem
   - smart-turrets
+  - alias__sui-migration
 date: September 15th, 2025
 author: Hecate
 image: /smart-turret.png

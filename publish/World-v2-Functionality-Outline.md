@@ -5,6 +5,7 @@ tags:
   - ecosystem
   - development
   - alias__sui-migration
+  - alias__deprecated
 date: June 16th, 2025
 author: Hecate
 updated_at: July 9th, 2025

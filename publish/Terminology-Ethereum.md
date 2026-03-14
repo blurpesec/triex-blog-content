@@ -5,6 +5,7 @@ tags:
   - ecosystem
   - development
   - alias__sui-migration
+  - alias__deprecated
 date: June 17th, 2025
 author: Hecate
 image: /headen.webp

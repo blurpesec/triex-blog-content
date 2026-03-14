@@ -5,6 +5,7 @@ tags:
   - ecosystem
   - development
   - alias__sui-migration
+  - alias__deprecated
 date: July 9th, 2025
 image: /dust.avif
 ---
