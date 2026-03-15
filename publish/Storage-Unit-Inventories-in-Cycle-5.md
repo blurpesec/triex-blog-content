@@ -5,7 +5,7 @@ tags:
   - ecosystem
   - development
 date: March 14th, 2026
-image: /fake_inventory.png
+image: /smart_storage_unit.png
 ---
 A **Storage Unit** is an on-chain, programmable storage structure anchored at a location in the game world. It holds items across multiple distinct inventories, each with different access rules. This guide explains the inventory types, how players interact with them, and the kinds of gameplay they enable.
 

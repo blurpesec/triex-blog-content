@@ -10,7 +10,7 @@ date: January 24th, 2026
 author: Hecate
 updated_at: January 24th, 2026
 created_at: January 24th, 2026
-image: /currencies.svg
+image: /superheavy.jpg
 ---
 Blockchain in gaming is often met with skepticism, and understandably so. But before dismissing or embracing it, it helps to understand the actual problem blockchain solves.
 
