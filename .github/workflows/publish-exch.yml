@@ -19,6 +19,7 @@ jobs:
           submodules: recursive
           persist-credentials: true  # Required for pushing later
 
+
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
