@@ -13,7 +13,7 @@ jobs:
       - name: Checkout the other repo
         uses: actions/checkout@v4
         with:
-          repository: loash-industries/metalyth-app-api  # Replace with actual org/repo
+          repository: loash-industries/triex-app-api  # Replace with actual org/repo
           token: ${{ secrets.DEPLOY_KEY }}  # Needs write access to target repo
           ref: main
           submodules: recursive
