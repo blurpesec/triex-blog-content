@@ -1,6 +1,6 @@
 ---
 title: FAQ
-excerpt: Frequently Asked Questions about Trinary Exchange - an item marketplace service for EVE Frontier
+excerpt: Frequently Asked Questions about Trinary Exchange | An item marketplace protocol for EVE Frontier
 tags:
   - faq
 date: April 28th, 2026
@@ -10,7 +10,7 @@ image: /trilith.svg
 ## FAQ
 
 ### **What is Trinary Exchange (TriEx)?**
-Trinary Exchange is a protocol for running player-driven marketplaces in EVE Frontier **without requiring anyone to take custody of your assets**.
+Trinary Exchange is a protocol for running player-driven item marketplaces in EVE Frontier.
 
 It allows players to buy and sell items at local trade hubs while keeping control of their own items and currency at all times.
 
