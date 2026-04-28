@@ -1,40 +1,182 @@
 ---
 title: FAQ
-excerpt: Frequently Asked Questions about Trinary Exchange - an item marketplace protocol for EVE Frontier
+excerpt: Frequently Asked Questions about Trinary Exchange - an item marketplace service for EVE Frontier
 tags:
   - faq
-date: February 6th, 2026
+date: April 28th, 2026
 author: Hecate
 image: /trilith.svg
 ---
-## What is it?
-Trinary Exchange (TriEx) is a distributed exchange protocol that allows for tribes, syndicates, or players within Eve Frontier to spin up their own trading hubs by exposing a low-level trading system on-chain that is trust-less by design. The Trinary Exchange service and the operators of trade hubs will have no ability to take player items or currency; they will only have the ability to facilitate trades initiated by players. 
+## FAQ
 
-### Is the Trinary Exchange an in-game tribe?
-No. TriEx aims to be a neutral service that builds trading infrastructure for other tribes to use. There will be no gating to deny anyone the ability to become a trading hub service operator, nor on building second-order services on top of it (tribe mission systems, loan systems, etc).
+### **What is Trinary Exchange (TriEx)?**
+Trinary Exchange is a protocol for running player-driven marketplaces in EVE Frontier **without requiring anyone to take custody of your assets**.
 
-## Is it safe?
-Generally, yes - though this is a bit of a complex question to answer, so we'll break it down into different types of risk (these aren't all-encompassing, but should give a good indication of how we're thinking about this).
-### Item ownership
-While trading within TriEx, items and currency will be either owned by the player (if they're not actively being traded) or by a vault module that custodies assets (if they're are part of an open order). The vault module has no ability to "withdraw" other than through the mechanism of trade execution or order cancellation. At no point in time will the owner of an SSU have access to your player-owned assets, nor the module-"owned" assets. Neither will we as the operators of the exchange. The modules, while managed by TriEx, are "trust-less" by design. This means that they operate fully within the bounds of the module code which defines the behavior of the trading system.
+It allows players to buy and sell items at local trade hubs while keeping control of their own items and currency at all times.
 
-### On-chain hack risk
-The module design of the Trinary Exchange is as a fork (a copy) of [DeepBook v3](https://docs.sui.io/standards/deepbook) with some functionality stripped out. The on-chain code here is (as of November 8th, 2025) custodying assets in excess of $10m and has been for more than 1-year. That's not to say that the TriEx contracts have the same security, but they do inherit some of that security by nature of being almost exactly the same implementation and design. 
+---
 
-DeepBook v3 has undergone a security audit in August 2024 which you can read [here](https://github.com/sui-foundation/security-audits/blob/main/docs/mysten_deepbook_audit_final.pdf) . If the Trinary Exchange gains significant traction, we can pursue our own audit of our slightly-altered version of the contract code.
+### **Is TriEx an in-game tribe or organization?**
+No.
+TriEx is neutral infrastructure—not a tribe, faction, or gated group.
 
-### Trading interface hack risk
-Since transactions are created through software running on a website, there is a risk of various types of hacks associated with the trading interface. Software supply chain hacks, DNS spoofing, phishing, etc are all forms of hacks that affect the trading interface. There is nothing that can be done to fully alleviate the risk of hack, but standardizing solid security practices can be used to reduce the risk drastically. A few of these mechanisms that we'll be pursuing are:
-1. Package version pinning
-2. Automated vulnerability detection
-3. DNSSEC, and HSTS
-4. Bring-your-own-wallet only - We never handle your private keys. All transactions must be signed through your existing Sui wallet (like Slush SUI Wallet, Nightly wallet, etc.), leveraging their established security models rather than implementing our own wallet solution.
+Anyone can use it, and anyone can operate a trading hub.
 
-In addition - we'll be looking into the viability of periodically publishing a static (client-side) content-addressed version of the trading website using IPFS for software supply-chain determinism.
+---
 
-## Will the on-chain orderbook code be open sourced?
+### **How do I set up an in-game trade hub with TriEx?**
+Point your storage unit to `https://trinary.exchange` and follow the directions to get started.
+
+**OR:**
+You can watch this short (2.5-minute) tutorial:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/d177AMwPkw8"  
+title="YouTube video player" frameborder="0"  
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  
+allowfullscreen></iframe>
+
+---
+
+### **Do I need to trust the exchange operator?**
+Minimally.
+
+The operator provides the interface and runs the TriEx trade hub, but **they cannot access or withdraw your items or currency without destroying their storage unit running TriEx**.
+
+**That said:** Exchange operators can un-anchor their structures, and the items within will be dropped into space.
+
+---
+
+### **What happens if a TriEx hub is destroyed while I have buy or sell orders listed?**
+If the storage unit hosting TriEx is destroyed, some of the items at the trade hub will likely drop to the attackers.
+
+* **Sell orders** become null and void since the items backing them no longer exist and cannot be traded.
+* **Buy orders** can still be canceled by their owner, allowing you to reclaim your currency from the wreckage of a destroyed trade hub.
+
+---
+
+### **What happens to my items when I list them for sale?**
+Your items are either:
+
+* In your possession (when not listed), or
+* Locked while an order is active
+
+They can only move if:
+
+* The order is completed, or
+* You cancel it
+
+No one else can move them.
+
+---
+
+### **Is it safe?**
+TriEx is designed to minimize trust and reduce risk:
+
+* Your assets are never controlled by another player
+* Trades follow fixed, transparent rules
+* You approve all actions using your own wallet
+
+As with any online system, general risks still apply (such as phishing or fake websites), so standard caution is important.
+
+---
+
+### **Do I need SUI for transaction fees?**
+**No**—we currently pay those transaction fees for you.
+
+---
+
+### **What is CRED?**
+Inter-Galactic Credits (CRED) is a currency on the Sui Testnet blockchain that TriEx created and operates for testing trading during the early stages of the game.
+
+In the future, trade hub operators (individual players or player groups) may create and operate their own currencies to add more financial depth to the game.
+
+We intend for player-operated currencies to be integrated into TriEx in a trustless way. This means the protocol does not prevent players from creating or using their own currencies, and no permission from TriEx is required.
+
+---
+
+### **Can someone steal my assets through the exchange?**
+The system is designed to prevent that.
+
+There is no shared custody and no administrative access that would allow an operator to withdraw user assets.
+
+---
+
+### **What happens if the website or interface goes offline?**
+Your assets remain safe.
+
+The interface is only a way to interact with the system—your orders and items continue to exist independently and can be recovered. To recover assets if TriEx goes offline, players will need to use or build tools that interact directly with the on-chain contracts.
+
+---
+
+### **Do I need a specific crypto wallet?**
+
+* If you want to trade in-game: **No**, just use the storage unit interaction window.
+* If you want to trade or manage trade hubs in Chrome or Brave: you will need to install the CCP Games Eve Vault Chrome extension and log in with your EVE Frontier credentials.
+
+---
+
+### **Where do trades take place?**
+Trades are executed on-chain on Sui.
+
+This ensures transparency and that all trades follow predefined rules.
+
+---
+
+### **Why not just trade directly with other players?**
+Direct trading works, but has limitations:
+
+* Both players must be available at the same time
+* It relies on trust or manual coordination
+* It does not scale well into a broader market
+
+TriEx enables asynchronous trading—you can list items and others can fill those orders later.
+
+---
+
+### **Can anyone create a TriEx hub?**
+Yes.
+It is fully permissionless—any player, tribe, or organization can set up and operate a trading hub.
+
+---
+
+### **Is there a single global market?**
+No.
+Markets are local to the storage unit where the TriEx trade hub is deployed and reflect local conditions such as supply, demand, and logistics.
+
+However, you **can see** buy and sell orders at nearby public trade hubs. This allows you to identify better prices elsewhere and supports transportation as a viable in-game career path.
+
+---
+
+### **Can players manipulate prices?**
+Prices are determined by market activity.
+
+While players can influence prices through trading, they **cannot access or interfere with other players’ assets or orders**.
+
+---
+
+### **Can TriEx be used for more than trading?**
+Yes.
+It can serve as a foundation for additional systems that require item trading primitives such as:
+
+* Loans
+* Contracts
+* Tribe supply chains
+* Logistics coordination
+
+---
+
+### ### **Will the code be open source and publicly auditable?**
 Yes.
 
-## **When can I start using Trinary Exchange?**
-We're aiming to have a beta using mocked on-chain data sometime in Feb/March 2026. As for main game data - it will likely be some time after CCP has finished migrating the underlying state to SUI (currently targeting March, 2026).
+It is not currently open source, but the intent is to release the contracts, interface, and some developer tooling so players can build their own trading interfaces on top of TriEx.
 
+---
+
+### **Are there any tradeoffs?**
+Yes:
+
+* Early markets may have limited liquidity
+* Each hub builds its own local activity
+* Users must still follow standard online safety practices
+
+However, the key benefit remains: **you do not need to trust anyone else with your assets**.
