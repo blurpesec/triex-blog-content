@@ -2,7 +2,7 @@
 title: Trinary Exchange | The Item Marketplace for EVE Frontier
 excerpt: Trade with anyone, anywhere in the Trinary. Your items, your prices, your rules.
 tags:
-  - faq
+  - announcement
 date: May 7th, 2026
 author: Hecate
 image: /hauler.png
