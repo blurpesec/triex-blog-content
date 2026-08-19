@@ -1,16 +1,17 @@
 ---
-title: Trading in the Fog of War
-excerpt: "Trading in the Fog of War: The future of Private and Public Markets in Eve Frontier"
+title: "EVE Frontier Trade Hubs: Trading in the Fog of War"
+excerpt: How public and private trade hubs shape the EVE Frontier economy - location secrecy, market volume, and the strategy behind going public.
 tags:
   - ecosystem
   - economics
   - politics
   - speculation
+  - trade-hubs
 date: February 7th, 2026
 author: Hecate
 image: /a_hub.png
 ---
-# Public and Private Markets in EVE Frontier
+## Public and Private Trade Hubs in EVE Frontier
 
 _Want to discuss trade hub strategies and share intel? Join the conversation in our [Discord community](https://discord.gg/VCmR6xrxmj)._
 
@@ -22,13 +23,13 @@ This post walks through what those categories look like and some of the strategi
 
 ## Private Trade Hubs
 
-By default, a trade hub's location is obfuscated. To trade at one, you need to know it exists at a specific location, which means you're either the owner or someone the owner has shared coordinates with.
+By default, a trade hub's location is obfuscated. To trade at one, you need to know it exists at a specific location, which means you're either the owner or someone the owner has shared coordinates with. Trinary Exchange now handles that sharing with [end-to-end encrypted access lists](/posts/build-in-the-shadows).
 
 Private hubs can transition to public by broadcasting their location. This is a one-way process; a public hub can't become private again.
 
 The security model here is informational rather than military. A private hub doesn't need a standing defense fleet because potential attackers don't know where it is. The tradeoff is that the hub's market is limited to people within its trust network.
 
-The most straightforward use case is intra-tribe trade. A tribe sets up a hub, shares the location with members, and uses it to pool fuel, ships, and materials. The limitation is that the more people who know about a hub, the more likely its location leaks. For an organization of any real size, keeping a shared hub truly private is difficult.
+The most straightforward use case is intra-tribe trade. A tribe sets up a hub, shares the location with members, and uses it to [pool fuel, ships, and materials](/features/shared-storage). The limitation is that the more people who know about a hub, the more likely its location leaks. For an organization of any real size, keeping a shared hub truly private is difficult.
 
 A more interesting configuration is a private-hub-public-spoke model. A small number of trusted logistics officers know its location and are responsible for moving goods between a private "hub" and a set of "spoke" hubs around which other tribe members or neutral traders could trade. The spokes might be semi-public or known to the broader tribe, but the root hub stays hidden. This creates a supply chain where the reserves are insulated from intelligence leaks further down the network.
 
@@ -38,11 +39,11 @@ A public hub's location is visible to all players, including enemies. This makes
 
 Public hubs will likely have less items for sale at any given time since it implies more at risk. Traders don't want to leave valuable goods sitting at a location that could be raided. The activity tends toward quick exchanges: show up, grab what you need or drop off what you're selling, and leave. Whatever stays listed are items the seller can afford to lose.
 
-The advantage of a public hub is volume. A private hub can only attract traders who already know about it. A public hub is visible to everyone: independent traders, neutral haulers, and anyone looking for a place to buy or sell. That accessibility is what makes a market worth using.
+The advantage of a public hub is volume. A private hub can only attract traders who already know about it. A public hub is visible to everyone: independent traders, neutral haulers, and anyone looking for [a place to buy or sell](/marketplace/discovery). That accessibility is what makes a market worth using.
 
 One potential use case is the neutral trade hub; a public marketplace that persists because multiple factions find it more useful to trade there than to fight over it. This kind of arrangement is sustained by everyone agreeing it's worth more standing than destroyed. Whether these emerge in practice depends on how the politics of early EVE Frontier play out, but the structural conditions for it are present.
 
-Another use case is front-line supply. A tribe operating in contested space might run a public hub specifically to attract traders willing to sell ships, ammunition, and fuel to the war effort. The hub doesn't need to be a long-term asset. It just needs to exist long enough to keep the front supplied - and contesting public hubs could be a major part of wars between player organizaations.
+Another use case is front-line supply. A tribe operating in contested space might run a public hub specifically to attract traders willing to sell ships, ammunition, and fuel to the war effort. The hub doesn't need to be a long-term asset. It just needs to exist long enough to keep the front supplied - and contesting public hubs could be a major part of wars between [player organizations](/organizations).
 
 ## Information as a Strategic Consideration
 

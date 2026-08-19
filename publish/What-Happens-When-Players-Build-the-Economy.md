@@ -1,8 +1,10 @@
 ---
-title: What Happens When Players Build the Economy
-excerpt: Why did CCP Games choose to build Eve Frontier using blockchain? What does it add to the game? How does it benefit players?
+title: EVE Frontier's Player-Built Economy
+excerpt: "Part 2: how smart contracts create a player-owned EVE Frontier economy - permissionless tools, deeper economic warfare, and new roles worth playing."
 tags:
   - primers
+  - economy
+  - blockchain
 date: January 24th, 2026
 author: Hecate
 updated_at: January 24th, 2026
@@ -29,21 +31,21 @@ Or if someone builds a system that tracks a player or tribe's reputation over ti
 
 ### Smart Contracts vs Traditional Platforms
 
-Consider how this differs from traditional games. In World of Warcraft or Eve Online, if you want to build tools that interact with the game, you're limited to whatever developer tools the developer provides, and they can shut it down at any time. With smart contracts, there's no gatekeeper. The marketplace IS the developer's tool. Anyone can read its data, write programs against it, or layer new services on top.
+Consider how this differs from traditional games. In World of Warcraft or EVE Online, if you want to build tools that interact with the game, you're limited to whatever developer tools the developer provides, and they can shut it down at any time. With smart contracts, there's no gatekeeper. The [marketplace](/features/marketplace) IS the developer's tool. Anyone can read its data, write programs against it, or layer new services on top.
 
-## Why Would CCP Games Use Blockchain for Eve Frontier?
+## Why Would CCP Games Use Blockchain for EVE Frontier?
 
-Eve Online has always been known for its player-driven economy and emergent gameplay. Players build corporations, wage wars, manipulate markets, and create their own stories within a complex virtual world. But it all runs on CCP's servers with CCP's code. Want to create new financial instruments for your corp? You're limited to what CCP built. Want tools that analyze market trends? You need their developer tools, which they control.
+EVE Online has always been known for its player-driven economy and emergent gameplay. Players build corporations, wage wars, manipulate markets, and create their own stories within a complex virtual world. But it all runs on CCP's servers with CCP's code. Want to create new financial instruments for your corp? You're limited to what CCP built. Want tools that analyze market trends? You need their developer tools, which they control.
 
-Eve Frontier changes this by building core game systems, assets, location, identity, and organizations, as smart contracts. The infrastructure becomes something anyone can interact with and extend.
+EVE Frontier changes this by building core game systems, assets, location, identity, and organizations, as smart contracts. The infrastructure becomes something anyone can interact with and extend.
 
 ### What This Actually Enables
 
-Consider ship lending. In Eve Online, lending a valuable ship requires personal trust, will they return it? The developer could build a lending system or a mission system (as they released in 2025), but you'd be constrained by whatever features they do or don't choose to include.
+Consider ship lending. In EVE Online, lending a valuable ship requires personal trust, will they return it? The developer could build a lending system or a mission system (as they released in 2025), but you'd be constrained by whatever features they do or don't choose to include.
 
-In Eve Frontier, someone writes a lending contract: you deposit collateral, borrow the ship, and the code handles everything automatically. Return it on time, get your deposit back. Don't return it, lender gets compensated. No personal trust required.
+In EVE Frontier, someone writes a lending contract: you deposit collateral, borrow the ship, and the code handles everything automatically. Return it on time, get your deposit back. Don't return it, lender gets compensated. No personal trust required.
 
-But here's where it gets interesting. Someone else can now write a contract that references the lending contract, maybe an investment fund that pools player capital to buy expensive ships, then lends them out for profit. The fund contract automatically splits returns among investors based on their stake. Another player writes a reputation tracker that monitors lending history, offering better rates to reliable borrowers. None of these developers needed permission from the original lending contract author.
+But here's where it gets interesting. Someone else can now write a contract that references the lending contract, maybe an investment fund that pools player capital to buy expensive ships, then lends them out for profit. The fund's code automatically splits returns among investors based on their stake. Another player writes a reputation tracker that monitors lending history, offering better rates to reliable borrowers. None of these developers needed permission from the original lending contract author.
 
 Or maybe you want to lend to someone who doesn't have enough collateral but is willing to pay a premium interest rate for the privilege. A player organization operates a reputation system tracking contract performance, on-time returns, successful deals, disputes. Before accepting the under-collateralized loan, you query their reputation contract. If they've got a solid track record, you take the risk for the higher return. If not, you pass. The reputation system operator didn't need to coordinate with the lending contract author, they just built a complementary service that makes the original system more useful.
 
@@ -65,7 +67,7 @@ A richer economy creates more reasons to interact, more reasons to trade, spy, b
 
 When investment funds back expeditions, those funds become targets. Disrupt the fund, strand the expedition, watch the fallout. When territorial tax contracts govern mining operations, disrupting that contract means disrupting an alliance's entire funding model. When bounty contracts make assassination profitable, the bounties themselves become strategic weapons, put enough ISK on someone's head and watch their allies reconsider.
 
-Consider what happens when competing players or alliances develop superior contract strategies, creating more efficient investment structures, better risk management, or more attractive terms. In a traditional game, economic competition is limited by the developer's design. In Eve Frontier, it becomes genuine strategic competition. Players who design better contracts attract more capital. Those who design inferior ones lose market share. The competition itself drives innovation and creates dynamic market conditions where adapting to rival strategies becomes essential for survival.
+Consider what happens when competing players or alliances develop superior contract strategies, creating more efficient investment structures, better risk management, or more attractive terms. In a traditional game, economic competition is limited by the developer's design. In EVE Frontier, it becomes genuine strategic competition. Players who design better contracts attract more capital. Those who design inferior ones lose market share. The competition itself drives innovation and creates dynamic market conditions where adapting to rival strategies becomes essential for survival.
 
 ### More Roles Worth Playing
 
@@ -73,7 +75,7 @@ Not everyone wants to fly combat ships. Some players excel at managing investmen
 
 ### Organizations That Match How You Want to Play
 
-Player organizations can take new forms. Eve Online's corporation system is powerful, but everyone works within the same structure CCP designed. With smart contracts, players design their own systems.
+Player organizations (like Trinary Exchange's [player organizations](/features/organizations)) can take new forms. EVE Online's corporation system is powerful, but everyone works within the same structure CCP designed. With smart contracts, players design their own systems.
 
 A mining cooperative where profits split automatically based on contribution. A mercenary company where contract payments sit in escrow until job completion. A territorial alliance where tax revenue funds shared defense, with members voting on rates based on contribution to military operations. An investment syndicate where fund managers compete for investor capital based on transparent track records.
 
@@ -83,6 +85,6 @@ Or the opposite: a secretive cartel where leadership controls the books and ever
 
 This matters because structure creates drama. When finances are transparent, disputes become "are these rules fair?" When finances are opaque, disputes become "did leadership steal from us?", and you can never prove it either way. When governance is encoded, coups require outmaneuvering rivals within the system's rules. When territorial taxes are algorithmic, competition moves to tax rates and services rather than just military force.
 
-Eve has always been a game where player actions create narratives, strategic competition, betrayals, wars with real stakes. A more complex economy multiplies the possibilities. When an investment fund struggles because rival funds offer better terms, alliances must adapt their economic strategies or face obsolescence. When a territorial tax contract faces competition from a rival offering better services and lower rates, the response isn't just military, it's economic countermeasures, competing contracts, trade wars. When a bounty board operator sells targeting data to the highest bidder, the reputation system that everyone relied on suddenly becomes suspect.
+EVE has always been a game where player actions create narratives, strategic competition, betrayals, wars with real stakes. A more complex economy multiplies the possibilities. When an investment fund struggles because rival funds offer better terms, alliances must adapt their economic strategies or face obsolescence. When a territorial tax contract faces competition from a rival offering better services and lower rates, the response isn't just military, it's economic countermeasures, competing contracts, trade wars. When a bounty board operator sells targeting data to the highest bidder, the reputation system that everyone relied on suddenly becomes suspect.
 
-These aren't scripted events. They're emergent gameplay made possible by systems players built, tested, competed with, and improved. For a game that's always been about player agency and emergent complexity, blockchain infrastructure aligns with Eve's philosophy, but Eve Frontier takes it further by making the infrastructure itself open and extensible. What players and developers create on this foundation remains to be seen, but for the first time, that's genuinely up to them.
+These aren't scripted events. They're emergent gameplay made possible by systems players built, tested, competed with, and improved. For a game that's always been about player agency and emergent complexity, blockchain infrastructure aligns with EVE's philosophy, but EVE Frontier takes it further by making the infrastructure itself open and extensible. What players and developers create on this foundation remains to be seen, but for the first time, that's genuinely up to them.

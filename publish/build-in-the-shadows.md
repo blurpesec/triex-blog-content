@@ -1,20 +1,21 @@
 ---
-title: Build in the Shadows | Encrypted Trade & Storage Hubs for Your Tribe
-excerpt: Grant specific characters access to your private assembly locations, protected by end-to-end encryption. Your coordinates stay hidden from everyone except the allies you choose
+title: EVE Frontier Private Trade Hubs - Build in the Shadows
+excerpt: Share EVE Frontier trade hub and tribe storage locations with chosen allies only - coordinates protected by end-to-end encryption, revocable at any time.
 tags:
   - ecosystem
   - eve-frontier
   - private
+  - trade-hubs
 date: May 7th, 2026
 author: Hecate
 ---
-# Private Location Sharing - Now with End-to-End Encryption
+## Private Location Sharing for EVE Frontier Trade Hubs
 
 Trinary Exchange is proud to introduce **Access Control Lists (ACLs) for private location sharing** - giving you granular control over who can see your hub locations in the Trinary. Your position data is protected by end-to-end encryption powered by the [Keyspace](https://github.com/loash-industries/keyspace) project, ensuring that only the characters you explicitly authorize can ever decrypt your coordinates.
 
 ## Why Private Location Sharing?
 
-In EVE Frontier, the location of a trading or storage hub is strategic intelligence. Until now, location data was binary: fully public or completely hidden. ACL-based sharing changes that.
+In EVE Frontier, the location of a trading or [storage hub](/features/shared-storage) is strategic intelligence. Until now, location data was binary: fully public or completely hidden. ACL-based sharing changes that.
 
 With private location sharing, you can:
 
@@ -23,7 +24,7 @@ With private location sharing, you can:
 
 ## Seamless Marketplace Integration
 
-Private location sharing works natively with the **TriEx Marketplace**. Authorized characters can browse and trade at your private hub just like any public one - the only difference is who gets through the door.
+Private location sharing works natively with the **[TriEx Marketplace](/features/marketplace)**. Authorized characters can browse and trade at your private hub just like [any public one](/marketplace/discovery) - the only difference is who gets through the door.
 
 ## Security & Privacy
 

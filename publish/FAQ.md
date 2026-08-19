@@ -1,18 +1,18 @@
 ---
-title: FAQ
-excerpt: Frequently Asked Questions about Trinary Exchange | An item marketplace protocol for EVE Frontier
+title: FAQ for Trinary Exchange - EVE Frontier Market
+excerpt: How trading works in EVE Frontier - buy and sell orders, player-run trade hubs, asset safety, and CRED - answered for the Trinary Exchange marketplace.
 tags:
   - faq
+  - marketplace
+  - trading
 date: April 28th, 2026
 author: Hecate
 image: /trilith.svg
 ---
-# FAQ
-
 ## What is Trinary Exchange (TriEx)?
 Trinary Exchange is a protocol for running player-driven item marketplaces in EVE Frontier.
 
-It allows players to buy and sell items at local trade hubs while keeping control of their own items and currency at all times.
+It allows players to buy and sell items at [local trade hubs](/marketplace/discovery) while keeping control of their own items and currency at all times.
 
 ---
 
@@ -24,7 +24,7 @@ Anyone can use it, and anyone can operate a trading hub.
 
 ---
 
-## How do I set up an in-game trade hub with TriEx
+## How do I set up a trade hub in EVE Frontier?
 Point your storage unit to `https://trinary.exchange` and follow the directions to get started.
 
 **OR:**
@@ -68,7 +68,7 @@ No one else can move them.
 
 ---
 
-## Is it safe?
+## Is it safe to trade on TriEx?
 TriEx is designed to minimize trust and reduce risk:
 
 * Your assets are never controlled by another player
@@ -110,7 +110,7 @@ The interface is only a way to interact with the system - your orders and items 
 ## Do I need a specific crypto wallet?
 
 * If you want to trade in-game: **No**, just use the storage unit interaction window.
-* If you want to trade or manage trade hubs in Chrome or Brave: you will need to install the CCP Games Eve Vault Chrome extension and log in with your EVE Frontier credentials.
+* If you want to trade or manage trade hubs in Chrome or Brave: you will need to install the CCP Games EVE Vault Chrome extension and log in with your EVE Frontier credentials.
 
 ---
 
@@ -134,7 +134,7 @@ TriEx enables asynchronous trading - you can list items and others can fill thos
 
 ## Can anyone create a TriEx hub?
 Yes.
-It is fully permissionless - any player, tribe, or organization can set up and operate a trading hub.
+It is fully permissionless - any player, [tribe, or organization](/features/organizations) can set up and operate a trading hub.
 
 ---
 
@@ -142,7 +142,7 @@ It is fully permissionless - any player, tribe, or organization can set up and o
 No.
 Markets are local to the storage unit where the TriEx trade hub is deployed and reflect local conditions such as supply, demand, and logistics.
 
-However, you **can see** buy and sell orders at nearby public trade hubs. This allows you to identify better prices elsewhere and supports transportation as a viable in-game career path.
+However, you **can see** buy and sell orders at nearby public trade hubs. This allows you to [identify better prices elsewhere](/items) and supports transportation as a viable in-game career path.
 
 ---
 
@@ -159,7 +159,7 @@ It can serve as a foundation for additional systems that require item trading pr
 
 * Loans
 * Contracts
-* Tribe supply chains
+* [Tribe supply chains](/features/shared-storage)
 * Logistics coordination
 
 ---

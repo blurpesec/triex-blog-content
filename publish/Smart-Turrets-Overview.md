@@ -1,6 +1,6 @@
 ---
-title: "Smart Turrets: Overview"
-excerpt: An explanation of how smart turrets function
+title: "EVE Frontier Smart Turrets: How They Work"
+excerpt: How EVE Frontier smart turrets choose targets - proximity and aggression logic, custom fire control contracts, and on-chain data as targeting criteria.
 tags:
   - ecosystem
   - smart-turrets
@@ -9,9 +9,9 @@ date: September 15th, 2025
 author: Hecate
 image: /smart-turret.png
 ---
-# Smart Turrets: Building Programmable Fire Control Systems
+## Smart Turrets: Building Programmable Fire Control Systems
 
-Smart turrets represent one of the core programmable systems within Eve Frontier. These automated weapons platforms don't just mindlessly shoot at everything that moves - they can be programmed with sophisticated logic to make complex targeting decisions based on real-time data.
+Smart turrets represent one of the core programmable systems within EVE Frontier. These automated weapons platforms don't just mindlessly shoot at everything that moves - they can be programmed with sophisticated logic to make complex targeting decisions based on real-time data.
 
 ## How Smart Turrets Work by Default
 
@@ -79,7 +79,7 @@ This programmable system opens up incredible possibilities for sophisticated tar
 Since smart turrets can access any on-chain data, the targeting possibilities extend far beyond simple friend-or-foe identification. Future implementations could include:
 
 - **Payment-based safe passage**: "Has this player paid the toll in the last 5 minutes?"
-- **Organizational membership**: "Is this player a shareholder in the Android Players Trading Consortium?"
+- **[Organizational membership](/features/organizations)**: "Is this player a shareholder in the Android Players Trading Consortium?"
 - **Insurance status**: "Has this player purchased ship insurance for the ship they're currently flying?"
 - **Reputation systems**: Target based on kill/death ratios, faction standings, or community reputation scores.
-- **Economic activity**: Protect or target players based on their trading history or market activity.
+- **Economic activity**: Protect or target players based on their [trading history or market activity](/transactions).

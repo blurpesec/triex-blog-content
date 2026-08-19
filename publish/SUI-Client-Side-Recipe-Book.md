@@ -1,13 +1,16 @@
 ---
-title: SUI | Client-side Recipe Book
-excerpt: Client side "recipes" for how to build client-side apps interacting with the SUI blockchain
+title: Sui Client-Side Recipe Book for dApp Builders
+excerpt: A practical Sui SDK reference - objects, coins and balances, transaction building, wallet integration, dynamic fields, and real-time event subscriptions.
 tags:
   - ecosystem
   - development
+  - sui
 date: December 24th, 2025
 image: /dust.avif
 ---
 A practical, end-to-end reference for basic Sui user functionality using the official Sui npm package.
+
+For the EVE Frontier-specific on-chain data structures these patterns read and write, see [Storage Unit Inventories in Cycle 5](/posts/storage-unit-inventories-in-cycle-5).
 
 This document covers:
 
@@ -22,7 +25,7 @@ This document covers:
 
 ---
 
-# Prerequisites
+## Prerequisites
 
 ### Install the Sui SDK
 
@@ -624,7 +627,7 @@ const events = await client.queryEvents({
 ---
 
 ## Complete Example: DEX Swap
-_Note: this uses a fake/non-existent DEX swap transaction to simulate how things might work for an example dapp_
+_Note: this uses a fake/non-existent DEX swap transaction to simulate how things might work for an example dapp. For the design trade-offs behind real on-chain markets, see [On-Chain Marketplace Design for EVE Frontier](/posts/on-chain-marketplace-design-for-eve-frontier)._
 
 ```ts
 import { SuiClient, getFullnodeUrl } from "@mysten/sui/client";

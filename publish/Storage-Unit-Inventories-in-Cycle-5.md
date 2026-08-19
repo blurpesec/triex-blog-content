@@ -1,13 +1,14 @@
 ---
-title: "Storage Unit Inventories in Cycle 5: A Builder's Guide"
-excerpt: A builder's guide on how items, inventory, and storage units are structured in the SUI-migrated Cycle 5 world contracts
+title: EVE Frontier Storage Unit Inventories in Cycle 5
+excerpt: A builder's guide to EVE Frontier storage units - main, owned, and open inventories, shared storage for tribes, and the extensions that control them.
 tags:
   - ecosystem
   - development
+  - storage
 date: March 14th, 2026
 image: /smart-storage-unit.png
 ---
-A **Storage Unit** is an on-chain, programmable storage structure anchored at a location in the game world. It holds items across multiple distinct inventories, each with different access rules. This guide explains the inventory types, how players interact with them, and the kinds of gameplay they enable.
+A **Storage Unit** is an on-chain, programmable storage structure anchored at a location in the EVE Frontier game world. It holds items across multiple distinct inventories, each with different access rules. This guide explains the inventory types, how players interact with them, and the kinds of gameplay they enable.
 
 ---
 
@@ -108,10 +109,10 @@ The owner of a Storage Unit can register an **extension** - a custom smart contr
 These mechanics combine to support a variety of player-driven scenarios:
 
 ### Player Marketplace / Vending Machine
-An extension acts as an automated shop. Players deposit items into the main inventory; the extension enforces pricing logic and uses `deposit_to_owned` to deliver purchased items directly into the buyer's owned inventory. The buyer can withdraw at their leisure using `withdraw_by_owner`.
+An extension acts as an automated shop - the pattern behind [Trinary Exchange's item marketplace](/features/marketplace). Players deposit items into the main inventory; the extension enforces pricing logic and uses `deposit_to_owned` to deliver purchased items directly into the buyer's owned inventory. The buyer can withdraw at their leisure using `withdraw_by_owner`.
 
-### Guild Hangar / Shared Armory
-A guild deploys a Storage Unit with an extension that checks guild membership. The open inventory acts as a communal pool - guild members deposit surplus gear, and authorized members withdraw what they need. The extension enforces any quotas or rank-based restrictions.
+### Tribe Hangar / Shared Storage
+A tribe deploys a Storage Unit with an extension that checks tribe membership. The open inventory acts as a [communal pool](/features/shared-storage) - tribe members deposit surplus gear, and authorized members withdraw what they need. The extension enforces any quotas or rank-based restrictions.
 
 ### Secure Escrow / Trading Post
 Two players agree on a trade. Each deposits items into their own owned inventories at the same Storage Unit. The extension verifies both sides have deposited, then atomically moves items between owned inventories using `deposit_to_owned`, completing the swap without either party needing to trust the other.
@@ -123,7 +124,7 @@ A game event or quest system runs as an extension. When a player completes an ob
 An extension could allow other players to use the main inventory for a fee, enforcing time-based withdrawal windows. Items deposited during a rental period can only be withdrawn before the lease expires; after that, items return to the owner.
 
 ### Trustless Public Infrastructure
-The owner deploys a Storage Unit, registers an audited extension, and **freezes** the configuration. Other players can inspect the frozen extension on-chain and trust that the rules will never change - no rug-pull possible. This enables community-run infrastructure like public warehouses or decentralized logistics hubs.
+The owner deploys a Storage Unit, registers an audited extension, and **freezes** the configuration. Other players can inspect the frozen extension on-chain and trust that the rules will never change - no rug-pull possible. This enables community-run infrastructure like public warehouses or [decentralized logistics hubs](/marketplace/discovery).
 
 ---
 

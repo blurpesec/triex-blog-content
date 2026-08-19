@@ -1,19 +1,20 @@
 ---
-title: Designing a Tribe Currency
-excerpt: An outline for how to think about building tribal or syndicate on-chain currencies in Eve Frontier
+title: Designing a Tribe Currency in EVE Frontier
+excerpt: A design framework for EVE Frontier tribe currencies and treasuries - trading central control against credible neutrality in a player-run economy.
 tags:
   - economics
   - currency
+  - tribes
 date: November 9th, 2025
 author: Hecate
 image: /currencies.svg
 ---
-## The Currency Design Compass for "Tribal" Economics
+## The Currency Design Compass for EVE Frontier Tribe Economics
 
 ![tribal currency design matrix](/tribal-currency-design-matrix.png)
-This framework maps the fundamental trade-offs in virtual currency design across two critical dimensions that determine a currency's viability and use cases within game economies.
+This framework maps the fundamental trade-offs in virtual currency design across two critical dimensions that determine a currency's viability and use cases within game economies such as EVE Frontier's.
 
-**The Control Axis (Vertical):** Spans from "Centrally-managed" to "Credibly Neutral." Centrally-managed currencies allow tribes to adjust supply and rules at will, providing flexibility for internal mechanics. Credibly neutral currencies operate on immutable, predetermined rules that build trust through predictability - essential for any currency meant to serve as a trading instrument or reserve asset.
+**The Control Axis (Vertical):** Spans from "Centrally-managed" to "Credibly Neutral." Centrally-managed currencies allow [tribes](/features/organizations) to adjust supply and rules at will, providing flexibility for internal mechanics. Credibly neutral currencies operate on immutable, predetermined rules that build trust through predictability - essential for any currency meant to serve as a [trading instrument](/features/marketplace) or reserve asset.
 
 **The Openness Axis (Horizontal):** Ranges from "Non-extensible" (closed) to "Extensible" (open), determining how freely the currency integrates with other systems. Non-extensible currencies maintain exclusivity within defined boundaries, while extensible currencies can more-easily bridge multiple tribes or regional economies.
 
@@ -23,7 +24,7 @@ This framework maps the fundamental trade-offs in virtual currency design across
 
 **Quadrant 2 - Collaborative Currencies:** Centrally-managed but open. Allows inter-tribe collaboration while maintaining sovereignty, though external adoption may be limited by trust concerns.
 
-**Quadrant 3 - Commodity Currencies:** Credibly neutral and closed. Game items with inherent value (ammunition, materials) that function as trusted mediums of exchange within specific ecosystems. Their neutrality and easy-to-understand supply/demand dynamics makes them potentially viable as localized trading currencies and reserve assets.
+**Quadrant 3 - Commodity Currencies:** Credibly neutral and closed. [Game items with inherent value](/items) (ammunition, materials) that function as trusted mediums of exchange within specific ecosystems. Their neutrality and easy-to-understand supply/demand dynamics makes them potentially viable as localized trading currencies and reserve assets.
 
 **Quadrant 4 - Open Protocol Currencies:** Credibly neutral and open. The main archetype capable of becoming game-wide trading standards in a vacuum. By sacrificing control for trust-less-ness and extensibility, these can scale beyond any single tribe or syndicate's influence (and persist beyond the longevity of a single tribe or syndicate).
 
