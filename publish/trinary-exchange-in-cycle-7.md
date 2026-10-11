@@ -35,7 +35,7 @@ How it works:
 - **Nothing is lost while you set up** - Fees earned before you register a payout address build up and wait for you. Your first claim pays out everything owed.
 - **Claim whenever you want** - Hit **Claim operator share** and your cut goes to your payout address. Anyone can trigger a claim, but the payment always goes to the address you registered.
 
-Want the details on what's shared and when? Read [how operator fees work](https://docs.trinary.exchange/docs/concepts/operator-fees).
+Want the details on what's shared and when? Read [how operator fees work](https://docs.trinary.exchange/docs/concepts/operator-fees?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7).
 
 ## Trade More, Pay Less
 
@@ -64,11 +64,11 @@ A few things worth knowing:
 - **Your tier lives on your trading account.** That includes your organization's. When officers trade through the org's account, they all build the same tier together.
 - **Use it or lose it.** Your tier is based on the last ~30 days. Stop trading and it steps back down as old fees age out.
 
-Click your name in the top-right corner to see your current tier and how far you are from the next one. The full breakdown, including what happens when you cancel a buy order, is in [the fees docs](https://docs.trinary.exchange/docs/concepts/fees).
+Click your name in the top-right corner to see your current tier and how far you are from the next one. The full breakdown, including what happens when you cancel a buy order, is in [the fees docs](https://docs.trinary.exchange/docs/concepts/fees?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7).
 
 ## Audit Logs for Shared Storage
 
-[Shared storage](/features/shared-storage) only works if people trust it. When fifty players can reach into the same vault, "who took the Kerogen Tar?" becomes an organizational problem.
+[Shared storage](https://trinary.exchange/features/shared-storage?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7) only works if people trust it. When fifty players can reach into the same vault, "who took the Kerogen Tar?" becomes an organizational problem.
 
 Cycle 7 adds **Audit Logs** to your inventory. Open **Inventory**, expand your organization in the sidebar, and pick **Audit Logs**. You'll see every item that moved into, out of, or between your org's vaults, at every hub and every tier.
 
@@ -86,7 +86,7 @@ No more digging through tribe chat to reconstruct who withdrew what. It's all on
 
 ## Share Locations Across Organizations
 
-[Private location sharing](/posts/build-in-the-shadows) let you hand your hub coordinates to individual players. In Cycle 7, **location lists can belong to an organization, and you can share them with individual players or with a role in any organization - yours or someone else's.**
+[Private location sharing](https://trinary.exchange/posts/build-in-the-shadows?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7) let you hand your hub coordinates to individual players. In Cycle 7, **location lists can belong to an organization, and you can share them with individual players or with a role in any organization - yours or someone else's.**
 
 ![A location list's Permissions tab: Algorithmic Warfare Officers hold Grant, Algorithmic Warfare Members can View, and the Rift Riders Member role is being added with View access](/cycle-7-location-sharing.png)
 
@@ -102,11 +102,11 @@ This is where it gets interesting. Some of the things you can now do:
 
 - **Joint operations** - Two organizations working toward the same goal can share a list of staging points, fuel caches, and forward hubs without merging their member rosters.
 - **Private trading networks** - Share your hub locations with a trusted partner org's Members role. Their traders can find your hubs and trade at them. Everyone else sees nothing.
-- **Need-to-know logistics** - Give your Officers a list with your reserve depots and give Members the list with the spoke hubs. The [hub-and-spoke model](/posts/trading-in-the-fog-of-war) is now a few clicks.
+- **Need-to-know logistics** - Give your Officers a list with your reserve depots and give Members the list with the spoke hubs. The [hub-and-spoke model](https://trinary.exchange/posts/trading-in-the-fog-of-war?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7) is now a few clicks.
 
 Locations are still end-to-end encrypted with [Keyspace](https://github.com/loash-industries/keyspace). TriEx servers never see your coordinates, and when you revoke access, it's revoked. If your account can see a lot of lists and you'd rather not sign a decrypt prompt on every page load, you can turn off **Auto-decrypt org locations** in **Settings** and decrypt on demand instead.
 
-Step-by-step instructions are in [the location sharing guide](https://docs.trinary.exchange/docs/how-to/share-a-location).
+Step-by-step instructions are in [the location sharing guide](https://docs.trinary.exchange/docs/how-to/share-a-location?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7).
 
 ## Every Trade Hub Gets Its Own Page
 
@@ -129,7 +129,7 @@ Find any hub from the **Trade Hubs** list and click the info icon next to it.
 
 ## Get Started
 
-Everything above is live on [trinary.exchange](https://trinary.exchange) now.
+Everything above is live on [trinary.exchange](https://trinary.exchange?utm_source=blog__cycle_7_announcement&utm_campaign=cycle_7) now.
 
 1. **Run a hub?** Open your hub's page, go to **Settings & Treasury**, and register a payout address. Then claim what you've earned.
 2. **Check your tier** - Click your name in the top-right corner and see where you sit between Dust and Galaxy.
