@@ -68,14 +68,16 @@ No one else can move them.
 
 ---
 
-## Is it safe to trade on TriEx?
-TriEx is designed to minimize trust and reduce risk:
+## Is Trinary Exchange safe?
+Your items stay in the Storage Unit at the trade hub, and only your own wallet can move them or your CRED: the exchange's contracts give neither the hub's owner nor Trinary Exchange a way to withdraw them.
 
-* Your assets are never controlled by another player
-* Trades follow fixed, transparent rules
-* You approve all actions using your own wallet
+* **Items** stay in the hub's Storage Unit the whole time. While a sell order is open they are locked to that order, and they only move when the order fills or you cancel it.
+* **CRED** for an open buy order is locked in the on-chain market until the order fills or you cancel it. The rest sits in your wallet or your trading account, which only your wallet can withdraw from.
+* **Every action** is a transaction you approve in your own wallet.
 
-As with any online system, general risks still apply (such as phishing or fake websites), so standard caution is important.
+What you do trust Trinary Exchange with is the code: the operator can upgrade the exchange's smart contracts. The [capabilities list](https://github.com/loash-industries/trinary-exchange/blob/main/CAPABILITIES.md) sets out exactly what the operator can and cannot do.
+
+The other risks are in the game and on the web: if a hub's Storage Unit is destroyed or un-anchored, the items inside are lost or dropped into space, and phishing sites can imitate trinary.exchange, so check the address before you sign.
 
 ---
 
@@ -85,11 +87,20 @@ As with any online system, general risks still apply (such as phishing or fake w
 ---
 
 ## What is CRED?
-Inter-Galactic Credits (CRED) is a currency on the Sui Testnet blockchain that TriEx created and operates for testing trading during the early stages of the game.
+CRED (Inter-Galactic Credits) is the currency Trinary Exchange prices and settles EVE Frontier trades in: a token on the Sui testnet that Trinary Exchange created and operates.
+
+You get CRED by selling items, by swapping EVE or SUI for it on [Currencies](/currencies), or from the one-time starter claim on the trade screen. It has 6 decimal places and carries no voting or staking rights. Full explainer: [What is CRED in EVE Frontier?](/guides/what-is-cred-in-eve-frontier)
 
 In the future, trade hub operators (individual players or player groups) may create and operate their own currencies to add more financial depth to the game.
 
 We intend for player-operated currencies to be integrated into TriEx in a trustless way. This means the protocol does not prevent players from creating or using their own currencies, and no permission from TriEx is required.
+
+---
+
+## How is Trinary different from other EVE Frontier markets?
+Trinary Exchange prices every item in CRED, pays the Sui network fee for your trades, and connects many player-owned trade hubs into one place where you can compare prices and distances.
+
+On top of the market it adds tribe organizations with shared storage and treasuries, currency markets for EVE and SUI, a hauling job board, and a developer API. EF-Map's Open Market, for example, settles in EVE and has traders pay their own gas in SUI. See the [side-by-side comparison](/guides/trinary-exchange-vs-ef-map-open-market).
 
 ---
 
