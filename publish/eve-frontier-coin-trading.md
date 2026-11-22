@@ -24,7 +24,7 @@ Until now, every trade on Trinary Exchange was an item changing hands for CRED. 
 
 Open **Currencies** from the sidebar and you land on **Discover**: every currency listed on Trinary Exchange, priced live in CRED.
 
-![The Discover Coins & Currencies page: EVE at 885.515 CRED with a fixed supply of 10B, CRED at 3.69913B circulating of 10B and mintable, and SUI with a fixed supply](/coin-trading-discover.png)
+![The Discover Coins & Currencies page: EVE at 885.515 CRED with a fixed supply of 10B, CRED at 3.69913B circulating of 10B, and SUI with a fixed supply](/coin-trading-discover.png)
 
 Each row gives you:
 
